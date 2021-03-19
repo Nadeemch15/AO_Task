@@ -15,11 +15,20 @@ namespace BddFramework
         {
             // Scroll down  
             IJavaScriptExecutor js = (IJavaScriptExecutor)Hooks.driver;
-            js.ExecuteScript("window.scrollBy(0, 1000)");
+            js.ExecuteScript("window.scrollBy(0, 3000)");
         }
-        public void CheckPageTitle(string pagetitle)
+
+        public void Scrolldown_1500()
         {
-            Assert.IsTrue(Hooks.driver.Title.Contains(pagetitle));
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Hooks.driver;
+            js.ExecuteScript("window.scrollBy(0, 1500)");
+
+        }
+      
+        public void Wait()
+        {
+            //implicit wait 
+            Hooks.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
     }

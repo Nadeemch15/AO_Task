@@ -87,25 +87,13 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CommonFunctions.cs" />
-    <Compile Include="Pages\DisplayDressPage.cs" />
-    <Compile Include="Pages\TakeScreenshotPage.cs" />
-    <Compile Include="StepDefinition\DisplayDressSteps.cs" />
+    <Compile Include="Pages\SearchItemPage.cs" />
     <Compile Include="Hooks.cs" />
-    <Compile Include="Pages\AddItemtoCartPage.cs" />
-    <Compile Include="Pages\CreateAccountPage.cs" />
-    <Compile Include="Pages\LoginPage.cs" />
-    <Compile Include="StepDefinition\AddItemtoCartSteps.cs" />
-    <Compile Include="StepDefinition\CreateAccountSteps.cs" />
-    <Compile Include="StepDefinition\LoginStep.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StepDefinition\TakeScreenshotSteps.cs" />
+    <Compile Include="StepDefinition\SearchItemSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Feature\AddItemToCart.feature" />
-    <None Include="Feature\CreateAccount.feature" />
-    <None Include="Feature\Login.feature" />
-    <None Include="Feature\DisplayDress.feature" />
-    <None Include="Feature\TakeeScrenshot.feature" />
+    <None Include="Feature\SearchItem.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

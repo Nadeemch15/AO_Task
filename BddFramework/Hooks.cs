@@ -13,16 +13,17 @@ namespace Bdd_Task.Utilities
         public void BeforeScenario()
         {
             driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            //if(driver != null)
-            //{
-            //    driver.Close();
-            //    driver.Quit();
-            //}            
+            if (driver != null)
+            {
+                driver.Close();
+                driver.Quit();
+            }
         }
     }
 }
