@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BddFramework")]
+[assembly: AssemblyTitle("Ao_Task")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BddFramework")]
+[assembly: AssemblyProduct("Ao_Task")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c9a51bfd-f211-440c-8377-8eb05e9499a3")]
+[assembly: Guid("596fb2d5-5bd3-4466-882b-3fff1a6cb860")]
 
 // Version information for an assembly consists of the following four values:
 //

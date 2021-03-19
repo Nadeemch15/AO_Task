@@ -1,8 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using TechTalk.SpecFlow;
 
-namespace Bdd_Task.Utilities
+namespace Ao_Task
 {
     [Binding]
     public sealed class Hooks

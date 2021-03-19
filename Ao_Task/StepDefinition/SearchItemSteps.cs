@@ -1,11 +1,8 @@
-﻿using Bdd_Task.Utilities;
-using BddFramework.Pages;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
+﻿using Ao_Task.Pages;
 using System;
 using TechTalk.SpecFlow;
 
-namespace BddFramework.StepDefinition
+namespace Ao_Task.StepDefinition
 {
     [Binding]
     public class SearchItemSteps
@@ -22,7 +19,7 @@ namespace BddFramework.StepDefinition
         {
             Hooks.driver.Navigate().GoToUrl("https://ao.com/");
         }
-        
+
         [Given(@"I search for washing machines and click search button")]
         public void GivenISearchForWashingMachinesAndClickSearchButton()
         {
@@ -53,3 +50,4 @@ namespace BddFramework.StepDefinition
         }
     }
 }
+

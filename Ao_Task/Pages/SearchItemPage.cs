@@ -1,5 +1,4 @@
-﻿using Bdd_Task.Utilities;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.PageObjects;
@@ -9,17 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BddFramework.Pages
+namespace Ao_Task.Pages
 {
     class SearchItemPage
     {
-
         public SearchItemPage()
         {
             PageFactory.InitElements(Hooks.driver, this);
         }
 
-       
+
         #region Elements
         [FindsBy(How = How.Id, Using = "siteSearch-input")]
         public IWebElement SearchBox { get; set; }
@@ -31,7 +29,7 @@ namespace BddFramework.Pages
         public IWebElement Hotpoint { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#style-1")]
-        public IWebElement Slider { get; set; }        
+        public IWebElement Slider { get; set; }
 
 
         [FindsBy(How = How.XPath, Using = "//body/div[@id='holder']/div[@id='container']/main[@id='app']/div[2]/div[1]/div[1]/aside[1]/div[2]/div[4]/div[2]/fieldset[1]/div[1]/a[1]/label[1]/span[1]")]
@@ -39,7 +37,7 @@ namespace BddFramework.Pages
 
 
         [FindsBy(How = How.XPath, Using = "//h1[contains(text(),'Washing Machines with 10 Kg, 10.5 Kg, 11 Kg, 12 Kg')]")]
-        public IWebElement  Validate { get; set; }
+        public IWebElement Validate { get; set; }
 
         #endregion
 
@@ -78,3 +76,4 @@ namespace BddFramework.Pages
 
     #endregion
 }
+

@@ -1,15 +1,13 @@
-﻿using Bdd_Task.Utilities;
-using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BddFramework
+namespace Ao_Task
 {
-   public class CommonFunctions
+    public class CommonFunctions
     {
         public void Scrolldown()
         {
@@ -24,7 +22,7 @@ namespace BddFramework
             js.ExecuteScript("window.scrollBy(0, 1500)");
 
         }
-      
+
         public void Wait()
         {
             //implicit wait 
@@ -33,3 +31,4 @@ namespace BddFramework
 
     }
 }
+
